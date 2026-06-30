@@ -16,13 +16,13 @@ public class RotateMatrix {
         System.out.println(Arrays.deepToString(rotate90(arr)));
     }
 
-    private static int[][] rotate90(int[][] matrix) {
+    private static int[][] rotate90(int[][] arr) {
         //transpose of the matrix
-        transpose(matrix);
+        transpose(arr);
         //mirror
-        mirrorMatrix(matrix);
+        mirrorMatrix(arr);
 
-        return matrix;
+        return arr;
 
     }
 
