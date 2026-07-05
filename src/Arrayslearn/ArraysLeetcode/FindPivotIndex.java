@@ -37,7 +37,6 @@ public class FindPivotIndex {
                 return i;
             }
         }
-
         return -1;
     }
 }
