@@ -3,7 +3,7 @@ public class Powerof2 {
     static void main(String[] args) {
 
 
-        int num = ;
+        int num = 4;
 
         System.out.println(isPowerOfTwo(num));
     }
