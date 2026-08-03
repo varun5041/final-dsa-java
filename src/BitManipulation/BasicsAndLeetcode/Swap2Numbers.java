@@ -1,4 +1,4 @@
-package BitManipulation.Basics;
+package BitManipulation.BasicsAndLeetcode;
 
 public class Swap2Numbers {
     static void main(String[] args) {

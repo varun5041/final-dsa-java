@@ -1,4 +1,4 @@
-package BitManipulation.Basics;
+package BitManipulation.BasicsAndLeetcode;
 
 public class AllRepeatedtwiceExceptOne {
     static void main(String[] args) {

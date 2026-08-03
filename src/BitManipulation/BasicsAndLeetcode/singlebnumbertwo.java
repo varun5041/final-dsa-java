@@ -1,4 +1,4 @@
-package BitManipulation.Basics;
+package BitManipulation.BasicsAndLeetcode;
 
 public class singlebnumbertwo {
     static void main(String[] args) {

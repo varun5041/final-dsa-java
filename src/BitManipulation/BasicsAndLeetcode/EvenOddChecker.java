@@ -1,4 +1,4 @@
-package BitManipulation.Basics;
+package BitManipulation.BasicsAndLeetcode;
 
 public class EvenOddChecker {
     static void main(String[] args) {

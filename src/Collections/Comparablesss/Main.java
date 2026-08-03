@@ -17,6 +17,7 @@ public class Main {
         System.out.println(list); //natural ordering or ideal ordering
         list.sort(new StudentNameComparator()); // if we want some  type like name ordeering
 
+        System.out.println(list);
     }
 
 

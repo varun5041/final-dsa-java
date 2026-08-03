@@ -1,4 +1,4 @@
-package BitManipulation.Basics;
+package BitManipulation.BasicsAndLeetcode;
 
 public class RemoveLastSetBit {
     static void main(String[] args) {
