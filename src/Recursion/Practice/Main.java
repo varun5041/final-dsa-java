@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion.Practice;
 
 public class Main {
     static void main(String[] args) {

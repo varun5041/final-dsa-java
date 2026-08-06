@@ -14,14 +14,14 @@ public class FlipImage {
         System.out.println(Arrays.deepToString(flipthis(arr)));
     }
 
-    private static int[][] flipthis(int[][] image) {
-        int n = image.length;
+    private static int[][] flipthis(int[][] arr) {
+        int n = arr.length;
 
-        for(int[] row : image){
+        for(int[] row : arr){
             reverse(row);
         }
 
-        return image;
+        return arr;
 
     }
 
