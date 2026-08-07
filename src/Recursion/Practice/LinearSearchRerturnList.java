@@ -9,7 +9,7 @@ public class LinearSearchRerturnList {
     static void main(String[] args) {
         int[] arr = {2,3,4,5,3,6,3,3};
 
-        System.out.println(RepeatedLinearSearch(arr,3));
+        System.out.println(RepeatedLinearSearch2(arr,3));
     }
 
     private static List<Integer> RepeatedLinearSearch(int[] arr,int target) {
@@ -24,14 +24,37 @@ public class LinearSearchRerturnList {
         if(index==n){
             return ans;
         }
-
         if(arr[index]==target){
             ans.add(index);
-            return Helper(arr,index+1,target,ans);
+        }
+        return Helper(arr,index+1,target,ans);
+    }
+
+    private static List<Integer> RepeatedLinearSearch2(int[] arr,int target) {
+        int n = arr.length;
+        int start = 0;
+        return helper2(arr,target,start);
+    }
+
+    private static List<Integer> helper2(int[] arr, int target, int index) {
+        boolean hasSomeAns=false;
+        int n = arr.length;
+        List<Integer> ans = new ArrayList<>();
+
+        if(index==n){
+            return ans;
+        }
+
+        if(arr[index]==target){
+            ans.add(index);//found ans add to list and search next//current
+            hasSomeAns=true;
         }
 
 
-        return Helper(arr,index+1,target,ans);
+        List<Integer> ansFromBeloweCalls = helper2(arr,target,index+1); //not found ans :searchy next
+        ans.addAll(ansFromBeloweCalls);
+
+        return ans;
     }
 
 
