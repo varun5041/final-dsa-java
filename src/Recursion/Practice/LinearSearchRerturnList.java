@@ -50,7 +50,6 @@ public class LinearSearchRerturnList {
             hasSomeAns=true;
         }
 
-
         List<Integer> ansFromBeloweCalls = helper2(arr,target,index+1); //not found ans :searchy next
         ans.addAll(ansFromBeloweCalls);
 
